@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Halloween Party</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <style>
+        /* Embedded CSS for page color and text */
+        body {
+            background-color: yellow;
+            color: black;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+
+
+        /* Embedded CSS for page layout */
+        #pageWrapper {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            grid-template-rows: 90px auto 100px;
+        }
+
+        header {
+            grid-row: 1 / 2;
+            grid-column: 1 / 3;
+        }
+
+        nav {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            margin-top: 18px;
+        }
+
+        main {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+            margin-top: 20px;
+            margin-left: 4px;
+        }
+
+        footer {
+            grid-row: 3 / 4;
+            grid-column: 1 / 3;
+            text-align: center;
+            padding-top: 12px;
+            margin-top: 20px;
+        }
+
+
+        /* Layout for main content */
+        #mainContentWrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+        }
+
+        #houseImage {
+            grid-row: 1 / 2;
+            grid-column: 1 / 4;
+            width: 100%;
+            border: 4px solid red;
+            background-color: orange;
+        }
+
+        #partyDescription {
+            /* Description section */
+            grid-row: 2 / 3;
+            grid-column: 1 / 3;
+            width: 80%;
+            margin-left: 10px;
+        }
+
+        #partyInfo {
+            /* Location and details section */
+            grid-row: 2 / 3;
+            grid-column: 3 / 4;
+        }
+
+        #partyActivities {
+            /* Activities section */
+            grid-row: 3 / 5;
+            grid-column: 1 / 2;
+            margin-left: 10px;
+        }
+
+        #partyActivities ul li {
+            padding: 6px;
+            list-style-image: url(images/pumpkinBullet.png);
+        }
+
+        #partyActivities ul {
+            margin-left: -18px;
+            margin-top: -10px;
+        }
+
+        figure {
+            /* Activities picture */
+            width: 300px;
+            height: 223px;
+            grid-row: 3 / 5;
+            grid-column: 2 / 3;
+            margin-top: 19px;
+            margin-left: 24px;
+        }
+
+        #partySchedule {
+            /* Schedule section */
+            grid-row: 3 / 5;
+            grid-column: 3 / 5;
+        }
+
+        #partySchedule ul {
+            margin-left: -18px;
+        }
+
+        #partySchedule ul li {
+            padding: 8px;
+            list-style-image: url(images/pumpkinBullet.png);
+        }
+
+
+        /* Headings color configuration */
+        h2,
+        h3 {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pageWrapper">
+        <header
+            style="background-color: black;color: white; background-image: url(images/headerPumpkinIcon.png); background-origin: content-box; background-position: 67%; background-repeat: no-repeat; border: 4px dashed red;border-radius: 15px;text-align: center;">
+            <h1>The Shelby Halloween Party</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="https://www.spirithalloween.com/section/halloween-costumes/4742.uts"
+                        target="_blank">Costumes</a></li>
+                <li><a href="https://www.goodhousekeeping.com/holidays/halloween-ideas/g2661/halloween-movies/"
+                        target="_blank">Movie Options</a></li>
+                <li><a href="https://open.spotify.com/playlist/4kLB7MjL8op6dRGDKGkiL5" target="_blank">Music
+                        Playlist</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="mainContentWrapper">
+                <img id="houseImage" src="images/houseImage.jpg"
+                    alt="Front view of the newly bought house. A huge mansion with a lot of yard space">
+                <section id="partyDescription">
+                    <h2>Halloween Themed Party</h2>
+                    <p style="text-align: justify; line-height: 1.6em;">After 4 years of planning, designing, and
+                        construction, our customly desisgned house has been built!
+                        To celebrate this, the Shelby Family is hosting a party in the new house. In the spirit of the
+                        Halloween
+                        season, the party will have a spooky Halloween theme. This means your family should come dressed
+                        in costumes. That's
+                        right, we're inviting everyone in your family! We want everyone to see and experience our new
+                        house. Clear out
+                        your day as the party will take place from the afternoon to midnight, with loads of fun
+                        activities in between!
+                    </p>
+                </section>
+                <section id="partyActivities">
+                    <h3>Activities</h3>
+                    <ul>
+                        <li>Dancing and chatting with Halloween themed music playing</li>
+                        <li>Haunted house and other game activities set up for the kids</li>
+                        <li>Family pumpkin carving contest! One family will win!</li>
+                        <li>Big Halloween dinner on a huge table, seating everyone</li>
+                        <li>Halloween movie for the kids and adults</li>
+                    </ul>
+                </section>
+                <figure>
+                    <img width="300" height="200" src="images/halloweenParty.jpg"
+                        alt="An image of a family wearing costumes and enjoying a Halloween party, showcasing the Halloween theme">
+                    <figcaption>Halloween Theme</figcaption>
+                </figure>
+                <section id="partyInfo">
+                    <h3>Location and Details</h3>
+                    <p><span class="importantBold">Address:</span> 1138 Old Spallumcheen Rd
+                    <p>
+                    <p><span class="importantBold">Date:</span> October 28th 2023 (Saturday)</p>
+                    <p><span class="importantBold">Phone:</span> 604-750-9165</p>
+                    <p><span class="importantBold">Parking:</span> Provided </p>
+                    <p><span class="importantBold">Halloween Costumes:</span> Please wear family-friendly costumes</p>
+                    <p><span class="importantBold">Food:</span> Meat and veggie/vegan options provided</p>
+                    <p><span class="importantBold">Invited Guests:</span> Entire family is invited</p>
+                </section>
+                <section id="partySchedule">
+                    <h3>Schedule</h3>
+                    <p><span class="importantBold">Time: 11:30AM to 12:00AM (Midnight)</span></p>
+                    <ul>
+                        <li>11:30AM-3:00PM: Dancing/Chatting and games for children</li>
+                        <li>3:00PM-5:00PM: Pumpkin Carving Contest</li>
+                        <li>5:00PM-7:00PM: Relaxing/Chatting</li>
+                        <li>7:00PM-9:00PM: Dinner</li>
+                        <li>9:00PM-12:00AM: Movie/Goodbyes</li>
+                    </ul>
+                    <p></p>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>Contact us at <a href="mailto:theshelbyfamily4021@gmail.com">theshelbyfamily4021@gmail.com</a></p>
+            <div id="sitemap">
+                <p style="margin-right: -47px;">Site Map:</p>
+                <ul id="sitemapLinks">
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="details.html" target="_blank">Details</a></li>
+                    <li><a href="https://www.spirithalloween.com/section/halloween-costumes/4742.uts"
+                            target="_blank">Costumes</a></li>
+                    <li><a href="https://www.goodhousekeeping.com/holidays/halloween-ideas/g2661/halloween-movies/"
+                            target="_blank">Movie Options</a></li>
+                    <li><a href="https://open.spotify.com/playlist/4kLB7MjL8op6dRGDKGkiL5" target="_blank">Music
+                            Playlist</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

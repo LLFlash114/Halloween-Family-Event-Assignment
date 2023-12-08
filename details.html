@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Party Details</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <style>
+        /* Embedded CSS for page color and text */
+        body {
+            background-color: yellow;
+            color: black;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+
+
+        /* Embedded CSS for page layout */
+        #pageWrapper {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            grid-template-rows: 90px auto 100px;
+        }
+
+        header {
+            grid-row: 1 / 2;
+            grid-column: 1 / 3;
+        }
+
+        nav {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            margin-top: 18px;
+        }
+
+        main {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+            margin-top: 20px;
+            margin-left: 230px;
+        }
+
+        footer {
+            grid-row: 3 / 4;
+            grid-column: 1 / 3;
+            padding-top: 12px;
+            margin-top: 20px;
+        }
+
+
+        /* Layout for main content */
+        #mainWrapper {
+            display: grid;
+            grid-template-columns: 544px 544px;
+            grid-template-rows: 40px auto auto auto auto;
+        }
+
+        #breadcrumbTrail {
+            grid-row: 1 / 2;
+            grid-column: 1 / 3;
+            margin-left: 40px;
+            margin-top: 22px;
+        }
+
+        #kidsPlayingImage {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+
+        #kidsActivitiesSection {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+            margin-top: 16px;
+        }
+
+        #dancingImage {
+            grid-row: 3 / 4;
+            grid-column: 2 / 3;
+            margin-top: 0px;
+        }
+
+        #dancingSection {
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+        }
+
+        #pumpkinCarvingImage {
+            grid-row: 4 / 5;
+            grid-column: 1 / 2;
+            margin-top: 0px;
+        }
+
+        #pumpkinCarvingSection {
+            grid-row: 4 / 5;
+            grid-column: 2 / 3;
+            margin-top: 0px;
+        }
+
+        #dinnerTableImage {
+            grid-row: 5 / 6;
+            grid-column: 2 / 3;
+        }
+
+        #dinnerSection {
+            grid-row: 5 / 6;
+            grid-column: 1 / 2;
+            margin-top: 16px;
+        }
+
+        #theaterImage {
+            grid-row: 6 / 7;
+            grid-column: 1 / 2;
+        }
+
+        #theaterSection {
+            grid-row: 6 / 7;
+            grid-column: 2 / 4;
+            margin-top: 16px;
+        }
+
+
+        /* Margin class styles for sections in the left column and images in the right column */
+        .leftColumnSection {
+            margin-left: 40px;
+        }
+
+        .rightColumnImage {
+            margin-left: -1px;
+        }
+
+
+        /* Style configuration for the breadcrum trail */
+        #breadcrumbTrail a {
+            text-decoration: none;
+        }
+
+
+        /* Style configuration for image figures and sections */
+        figure {
+            width: 500px;
+            height: 424px;
+        }
+
+        section {
+            background-color: orange;
+            width: 503px;
+            height: 428px;
+        }
+
+
+        /* h2 title style configuration */
+        h2 {
+            text-align: center;
+            padding-top: 14px;
+        }
+
+
+        /* Style configuration for pumpkin image bullet markers */
+        .pumpkinBulletPoints li {
+            list-style-image: url(images/pumpkinBullet.png);
+            background-size: 16px;
+            padding: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pageWrapper">
+        <header
+            style="background-color: black;color: white; background-image: url(images/headerPumpkinIcon.png); background-origin: content-box; background-position: 67%; background-repeat: no-repeat; border: 4px dashed red;border-radius: 15px;text-align: center; border: 4px dashed red;border-radius: 15px;text-align: center;">
+            <h1>The Shelby Halloween Party</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="https://www.spirithalloween.com/section/halloween-costumes/4742.uts"
+                        target="_blank">Costumes</a></li>
+                <li><a href="https://www.goodhousekeeping.com/holidays/halloween-ideas/g2661/halloween-movies/"
+                        target="_blank">Movie Options</a></li>
+                <li><a href="https://open.spotify.com/playlist/4kLB7MjL8op6dRGDKGkiL5" target="_blank">Music
+                        Playlist</a></li>
+            </ul>
+        </nav>
+        <main id="mainWrapper">
+            <p id="breadcrumbTrail"><a href="index.html">Home</a> >> <a href="details.html">Details</a></p>
+            <figure id="kidsPlayingImage">
+                <img src="images/kidsPlaying.jpg" width="500" height="400"
+                    alt="Two kids wearing halloween hats having fun creating Halloween themed arts and crafts, while being supervised by an adult in a halloween themed decorated room">
+                <figcaption>Activities for children</figcaption>
+            </figure>
+            <section id="kidsActivitiesSection">
+                <h2>Activities and games for children</h2>
+                <ul class="pumpkinBulletPoints">
+                    <li>While the adults socialize, these activities will be set kids from 11:30PM-3:00PM</li>
+                    <li>Activities include: mini haunted house, arts/crafts, video games, cookie decorating</li>
+                    <li>Activities continued: apple bobbing, candy hunt, and more halloween based games!</li>
+                    <li>The kids will be under dedicated and attentive adult supervision at all times</li>
+                    <li>We ensure every kid feels included, plenty of goodies to go around!</li>
+                </ul>
+            </section>
+            <figure id="dancingImage" class="rightColumnImage">
+                <img src="images/dancing.jpg" width="500" height="400"
+                    alt="9 adults dressed in formal dresses and suits dancing together with disco lights flashing in the background and music playing. Image simulates halloween party dancing">
+                <figcaption>Dancing and chatting</figcaption>
+            </figure>
+            <section id="dancingSection" class="leftColumnSection">
+                <h2>Dancing and chatting</h2>
+                <ul class="pumpkinBulletPoints">
+                    <li>Dancing and chatting will take place from 11:30PM-3:00PM</li>
+                    <li>To get the everyone into the party spirit and encourage social interaction</li>
+                    <li>Will be done in the giant living room that has lots of empty space</li>
+                    <li>Flashing disco lights will be active</li>
+                    <li>Background music is halloween themed and appropriate for all ages.</li>
+                    <li>Please email us for any issues regarding the music. The playlist is provided in the navigation
+                    </li>
+                </ul>
+            </section>
+            <figure id="pumpkinCarvingImage">
+                <img src="images/pumpkinCarving.jpg" width="500" height="400"
+                    alt="A close up view of a pumpkin being carved by a person with carving tools. The hands of the person have some pumpkin pulp on them">
+                <figcaption>Pumpkin craving</figcaption>
+            </figure>
+            <section id="pumpkinCarvingSection">
+                <h2>Pumpkin Carving Contest</h2>
+                <ul class="pumpkinBulletPoints">
+                    <li>The contest will take place from 3:00PM-5:00PM</li>
+                    <li>All families will participate; each family carves 1 pumpkin together</li>
+                    <li>All families will be provided a table and carving tools, separated into the living room and
+                        backyard</li>
+                    <li>The finished pumpkins will be voted by everyone, no voting for your own!</li>
+                    <li>The winning pumpkins family wth get a gift basket. Have fun!</li>
+                </ul>
+            </section>
+            <figure id="dinnerTableImage" class="rightColumnImage">
+                <img src="images/dinnerTable.jpg" width="500" height="400"
+                    alt="A close up view of a large table decorated with halloween props such as mini pumpkins, candles, fall leaves/flowers, and orange ribbon shaped napkins. The table is set and waiting for food to be placed">
+                <figcaption>Huge family dinner</figcaption>
+            </figure>
+            <section id="dinnerSection" class="leftColumnSection">
+                <h2>Halloween Dinner</h2>
+                <ul class="pumpkinBulletPoints">
+                    <li>This will take place from 7:00PM-9:00PM, in the big dining room; enough room and food for
+                        everyone</li>
+                    <li><span class="importantBold">Appetizers:</span> Spooky Spaghetti, Mummy Wrapped Hot Dogs, Mini
+                        Pumpkin Quesadillas, and more!</li>
+                    <li><span class="importantBold">Main Course:</span> Haunted Pizza, Mummy Meatloaf, Bat-Shaped
+                        Sandwiches, Spooky Pie, and more!</li>
+                    <li><span class="importantBold">Deserts:</span> Pumpkin Cheese Cake, Caramel Apples, Graveyard
+                        Cupcakes, and more!</li>
+                    <li><span class="importantBold">Drinks:</span> Eyeball Punch, Spiked Hot Chocolate, and Cold Drinks
+                    </li>
+                    <li>Please contact us as soon possible for any dietary concerns!</li>
+                </ul>
+            </section>
+            <figure id="theaterImage">
+                <img src="images/theater.jpg" width="500" height="400"
+                    alt="A view from the back left corner of a home theater room with lights on which displays 3 red leather theater seats at the back, a huge L shaped sofa in the middle, and 6 footstools in the front">
+                <figcaption>Family Halloween Movie</figcaption>
+            </figure>
+            <section id="theaterSection">
+                <h2>Spooky Movie</h2>
+                <ul class="pumpkinBulletPoints">
+                    <li>This last activity will take place from 9:00PM-12:00AM</li>
+                    <li>The movie will be played in our large theater room, with seats for everyone</li>
+                    <li>A family friendly Halloween movie will be played and popcorn provided</li>
+                    <li>A vote will be taken to decide the movie, a list of the movie choices is in the navigation</li>
+                    <li>We are considering playing an adult horror movie elsewhere if a number of adults want that,
+                        please let us know.</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Contact us at <a href="mailto:theshelbyfamily4021@gmail.com">theshelbyfamily4021@gmail.com</a></p>
+            <div id="sitemap">
+                <p style="margin-right: -47px;">Site Map:</p>
+                <ul id="sitemapLinks">
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="details.html" target="_blank">Details</a></li>
+                    <li><a href="https://www.spirithalloween.com/section/halloween-costumes/4742.uts"
+                            target="_blank">Costumes</a></li>
+                    <li><a href="https://www.goodhousekeeping.com/holidays/halloween-ideas/g2661/halloween-movies/"
+                            target="_blank">Movie Options</a></li>
+                    <li><a href="https://open.spotify.com/playlist/4kLB7MjL8op6dRGDKGkiL5" target="_blank">Music
+                            Playlist</a></li>
+                </ul>
+        </footer>
+    </div>
+</body>
+
+</body>
+
+</html>

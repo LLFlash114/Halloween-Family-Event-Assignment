@@ -1,0 +1,72 @@
+/* Nav style configuration for home and details pages */
+nav {
+    border: 4px solid red;
+    font-size: 1.1em;
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: orange;
+    border-bottom: 1px solid #ffffff;
+    display: block;
+    padding: 20px;
+}
+
+a:hover {
+    color: red;
+}
+
+
+/* Footer and footer sitemap style configuration for home and details pages */
+footer {
+    text-align: center;
+    background-color: orange;
+    border-top: 4px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+
+#sitemap {
+    display: flex;
+    flex-direction: row;
+}
+
+#sitemap a {
+    text-decoration: none;
+}
+
+#sitemapLinks {
+    display: flex;
+    list-style-type: none;
+}
+
+#sitemapLinks li {
+    margin-left: 12px;
+}
+
+
+/* Image figure and figure caption style configuration for home and details pages */
+figure {
+    border: 2px solid red;
+    background-color: orange;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Bold class style configuration to bold important text on home and details pages */
+.importantBold {
+    font-weight: bold;
+}
